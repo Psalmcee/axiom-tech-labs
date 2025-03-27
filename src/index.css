@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background:  #c39319;
+  box-shadow: 0 0 10px rgba(183, 254, 174, 0.2);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bubble-1 {
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.bubble-2 {
+  width: 150px;
+  height: 150px;
+  right: 15%;
+  top: 30%;
+  animation-delay: -2s;
+}
+
+.bubble-3 {
+  width: 80px;
+  height: 80px;
+  left: 20%;
+  top: 70%;
+  animation-delay: -1s;
+}
+
+.bubble-4 {
+  width: 120px;
+  height: 120px;
+  right: 25%;
+  top: 20%;
+  animation-delay: -3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-15px) translateX(15px);
+  }
+  50% {
+    transform: translateY(15px) translateX(-15px);
+  }
+  75% {
+    transform: translateY(-15px) translateX(-15px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
