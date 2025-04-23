@@ -26,7 +26,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [displayText, setDisplayText] = useState("");
-  const fullText = "> Hello Axiom_";
+  const fullText = ">Hello Axiom";
 
   useEffect(() => {
     let i = 0;
